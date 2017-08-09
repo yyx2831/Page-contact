@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: pink;
+      margin: 50px auto 0;
+      transition: all 500ms ease;
+      text-align: center;
+      font: 50px/300px '微软雅黑';
+      transform-style: preserve-3d;
+      transform: perspective(800px) rotateY(0deg);/* 设置初始值, 不然会闪烁, 跳很远 */
+      backface-visibility: hidden; /* 设置背面不可见 */
+    }
+    /* 因为翻转的时候box所在位置会变化所以使用一个div包裹, 作为触发区域 */
+    .box_con {
+      width: 301px;
+      height: 301px;
+      margin: 50px auto 0;
+    }
+
+    .box_con:hover .box {
+      transform: perspective(800px) rotateY(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box_con">
+    <div class="box">div元素</div>
+  </div>
+</body>
+
+</html>

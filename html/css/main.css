@@ -1,0 +1,23 @@
+div {
+  color: red;
+  font-size: 20px;
+  font-family: 微软雅黑;
+  text-indent: 40px;
+}
+
+em {
+  font-style: normal;
+}
+
+h1 {
+  font: normal 30px/20px 微软雅黑;
+  text-align: center;
+}
+
+a {
+  text-decoration: none; //去除下划线;
+}
+
+#div2 {
+  color: rgb(70, 63, 43);
+}

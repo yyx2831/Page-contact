@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>布局实例</title>
+    <style media="screen">
+      .menu{
+        list-style: none;
+        background-color: #55a8ea;
+        padding: 0px;
+        width: 960px;
+        height:40px;
+        margin: 50px auto 0;
+        position: relative;
+      }
+      .menu li{
+        float: left;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+      }
+      .menu a{
+        text-decoration: none;
+        /*
+        font-size: 14px;
+        font-family: 微软雅黑;*/
+        font:14px/40px 微软雅黑;
+        color: #fff;
+      }
+      .menu li:hover{
+        background-color: #00619f;
+      }
+      .menu .active{
+        background-color: #00619f;
+      }
+      .menu .new{
+        width: 40px;
+        height: 40px;
+      }
+      .menu .new{
+        width: 33px;
+        height: 23px;
+        background: url(./image/5153dbcb33188_200x200_3.jpg) no-repeat;
+        position: absolute;
+        left: 433px;
+        top: -10px;
+      }
+      .menu .new:hover{
+        background: url(./image/5153dbcb33188_200x200_3.jpg) no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="active"><a href="">首页</a></li>
+      <li><a href="">网站建设</a></li>
+      <li><a href="">程序开发</a></li>
+      <li><a href="">网络营销</a></li>
+      <li><a href="">企业VIP</a></li>
+      <li><a href="">案例展示</a></li>
+      <li><a href="">联系我们</a></li>
+      <li class="new"></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>animation 动画</title>
+    <style media="screen">
+      .box{
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        animation: moving 1s ease 1s 5; /* 引入moving动画, 动画时间1s 动画过渡ease 延迟1s 次数5次 */
+      }
+      @keyframes moving {
+        from{
+          width: 100px;
+        }
+        to{
+          width: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>背景</title>
+  <style media="screen">
+    .box1 {
+      width: 400px;
+      height: 200px;
+      border: 5px solid red;
+      background-color: gold;
+      background-image: url("./image/5153dbcb33188_200x200_3.jpg");
+      font: 100px/200px 微软雅黑;
+      margin-bottom: 50px;
+    }
+
+    .box2 {
+      width: 400px;
+      height: 200px;
+      border: 5px solid red;
+      background-color: gold;
+      font: 20px/200px 微软雅黑;
+      margin-bottom: 50px;
+    }
+
+    .box3 {
+      width: 760px;
+      height: 800px;
+      border: 5px solid red;
+      font: 20px/200px 微软雅黑;
+      /*background-color: gold;*/
+      /*background-image: url("./image/5153dbcb33188_200x200_3.jpg");*/
+      /*
+      repeat:重复平铺
+      repeat-x:横向重复平铺
+      repeat-y:纵向重复平铺
+      no-repeat:不重复
+      */
+      /*background-repeat: no-repeat;*/
+      /*background-position: left bottom;*/
+      /*background-position: 19px 20px;*/
+      background: url("./image/5153dbcb33188_200x200_3.jpg") 20px 50px gold no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">背景图片</div>
+  <div class="box2"><img src="./image/5153dbcb33188_200x200_3.jpg" alt="">背景图片</div>
+  <div class="box3"></div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>背景滚动</title>
+    <style media="screen">
+      body{
+        background: url("./image/006ubXD7jw1f4h47djmbsj30b40b43ym.jpg");
+        height:1000px;
+        background-attachment: fixed;
+      }
+      p{
+        color: #AB91F4
+      }
+    </style>
+  </head>
+  <body>
+    <p>1.1 Django的权限控制
+
+Django用user, group和permission完成了权限机制，这个权限机制是将属于model的某个permission赋予user或group，可以理解为全局的权限，即如果用户A对数据模型（model）B有可写权限，那么A能修改model B的所有实例（objects）。group的权限也是如此，如果为group C 赋予model B的可写权限，则隶属于group C 的所有用户，都可以修改model B的所有实例。
+
+这种权限机制只能解决一些简单的应用需求，而大部分应用场景下，需要更细分的权限机制。以博客系统为例，博客系统的用户可分为『管理员』、『编辑』、『作者』和『读者』四个用户组；博客系统管理员和编辑具有查看、修改和删除所有的文章的权限，作者只能修改和删除自己写的文章，而读者则只有阅读权限。管理员、编辑和读者的权限，我们可以用全局权限做控制，而对于作者，全局权限无法满足需求，仅通过全局权限，要么允许作者编辑不属于自己的文章，要么让作者连自己的文章都无法修改。
+
+上述的应用场景，Django自带的权限机制无法满足需求，需要引入另一种更细的权限机制：对象权限（object permission）。
+
+作者：Gevin
+链接：http://www.jianshu.com/p/01126437e8a4
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>1.1 Django的权限控制
+
+Django用user, group和permission完成了权限机制，这个权限机制是将属于model的某个permission赋予user或group，可以理解为全局的权限，即如果用户A对数据模型（model）B有可写权限，那么A能修改model B的所有实例（objects）。group的权限也是如此，如果为group C 赋予model B的可写权限，则隶属于group C 的所有用户，都可以修改model B的所有实例。
+
+这种权限机制只能解决一些简单的应用需求，而大部分应用场景下，需要更细分的权限机制。以博客系统为例，博客系统的用户可分为『管理员』、『编辑』、『作者』和『读者』四个用户组；博客系统管理员和编辑具有查看、修改和删除所有的文章的权限，作者只能修改和删除自己写的文章，而读者则只有阅读权限。管理员、编辑和读者的权限，我们可以用全局权限做控制，而对于作者，全局权限无法满足需求，仅通过全局权限，要么允许作者编辑不属于自己的文章，要么让作者连自己的文章都无法修改。
+
+上述的应用场景，Django自带的权限机制无法满足需求，需要引入另一种更细的权限机制：对象权限（object permission）。
+
+作者：Gevin
+链接：http://www.jianshu.com/p/01126437e8a4
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+  </body>
+</html>

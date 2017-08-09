@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>新闻列表</title>
+</head>
+<style media="screen">
+  .news_list_com {
+    width: 600px;
+    height: 290px;
+    border: 1px solid #ddd;
+    margin: 50px auto 0;
+    overflow: hidden;
+  }
+
+  .news_list_com h3 {
+    width: 560px;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    margin: 0px auto;
+  }
+
+  .news_list_com h3 span {
+    /*display: inline-block;*/
+    float: left;
+    height: 50px;
+    border-bottom: 2px solid red;
+    font: 18px/50px 微软雅黑;
+    color: #000;
+    padding: 0px 15px;
+    position: relative;
+  }
+  .news_list_com h3 a{
+    float:right;
+    text-decoration: none;
+    font: 14px/14px 微软雅黑;
+    color: #666;
+    margin-top: 25px;
+  }
+  .news_list_com h3 a:hover{
+    color: red;
+  }
+  .news_list_com ul {
+    list-style: none;
+    padding: 0px;
+    width: 560px;
+    height: 238px;
+    margin: 6px auto 0;
+  }
+
+  .news_list_com ul a {
+    float: left;
+    height: 38px;
+    font: 14px/38px 微软雅黑;
+    color: #000;
+    text-decoration: none;
+  }
+  .news_list_com ul a:before{
+    content: "· ";
+  }
+  .news_list_com ul a:hover{
+    color: red;
+  }
+
+  .news_list_com ul span {
+    float: right;
+    height: 38px;
+    font: 14px/38px 微软雅黑;
+    color: #000;
+  }
+
+  .news_list_com ul li {
+    height: 38px;
+    border-bottom: 1px solid #FDF6E3;
+  }
+</style>
+
+<body>
+  <div class="news_list_com">
+    <h3><span>新闻列表</span><a href="#">更多&gt;&gt;</a></h3>
+    <ul>
+      <li><a href="">视频直播：坦克方队出场 99A坦克气势磅礴</a><span>2017-7-30</span></li>
+      <li><a href="">庆祝人民解放军建军90周年文艺晚会在京举行</a><span>2017-7-30</span></li>
+      <li><a href="">讲形势 指方向 习近平这次对省部级干部说了啥</a><span>2017-7-30</span></li>
+      <li><a href="">李克强:取缔"地条钢"、化解过剩产能要坚定推进</a><span>2017-7-30</span></li>
+      <li><a href="">先睹为快！571台兵器装备准备接受检阅</a><span>2017-7-30</span></li>
+      <li><a href="">阅兵体现沙场特色:播录音穿迷彩 用跑步形式</a><span>2017-7-30</span></li>
+    </ul>
+  </div>
+</body>
+
+</html>

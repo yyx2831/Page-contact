@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>transform</title>
+    <style media="screen">
+      .box{
+        width: 200px;
+        height: 200px;
+        background-color: gold;
+        margin: 50px auto 0;
+        transition: all 100s ease;
+      }
+      .box:hover{
+        transform: rotate(90000deg); /* 旋转 沿着z轴 */
+      }
+      .box2{
+        width: 200px;
+        height: 200px;
+        background-color: gold;
+        margin: 50px auto 0;
+        transition: all 500ms ease;
+      }
+      .box2:hover{
+        transform: scale(0.5, 0.8); /* 宽乘 0.5 高乘 0.8 */
+      }
+      .box3{
+        width: 200px;
+        height: 200px;
+        background-color: gold;
+        margin: 50px auto 0;
+        transition: all 500ms ease;
+      }
+      .box3:hover{
+        transform: translate(50px, 10px);/* 位移 x轴位移50px, y轴位移10px */
+      }
+      .box4{
+        width: 200px;
+        height: 200px;
+        background-color: gold;
+        margin: 50px auto 0;
+        transition: all 500ms ease;
+      }
+      .box4:hover{
+        transform: skewX(10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+  </body>
+</html>

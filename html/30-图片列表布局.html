@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>图片列表布局</title>
+  <style media="screen">
+    dody,
+    ul,
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+    .clearfix:before,.clearfix:after{
+      content: "";
+      display: table;
+    }
+    .clearfix:after{
+      clear: both;
+    }
+    .clearfix:after{
+      zoom:1;
+    }
+    .pic_list_con {
+      width: 958px;
+      border: 1px solid #ddd;
+      margin-left: 50px auto 0;
+      overflow: hidden;
+    }
+
+    .pic_list_con h3 {
+      width: 918px;
+      height: 50px;
+      border-bottom: 1px solid #ddd;
+      margin: 0 auto;
+    }
+
+    .pic_list_con h3 span {
+      display: inline-block;
+      padding: 0 20px;
+      border-bottom: 2px solid red;
+      font: 18px/50px 微软雅黑;
+      color: #000;
+    }
+
+    .pic_list_con ul {
+      width: 918px;
+      margin: 20px 0 13px 20px;
+    }
+
+    .pic_list_con ul li {
+      width: 202px;
+      height: 202px;
+      float: left;
+      margin: 0 25px 29px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pic_list_con">
+    <h3><span>图片列表</span></h3>
+    <ul class="clearfix">
+      <li><a href=""><img src="./image/5153dbcb33188_200x200_3.jpg" alt="商品图片"></a></li>
+      <li><a href=""><img src="./image/5153dbcb33188_200x200_3.jpg" alt="商品图片"></a></li>
+      <li><a href=""><img src="./image/5153dbcb33188_200x200_3.jpg" alt="商品图片"></a></li>
+      <li><a href=""><img src="./image/5153dbcb33188_200x200_3.jpg" alt="商品图片"></a></li>
+      <li><a href=""><img src="./image/5153dbcb33188_200x200_3.jpg" alt="商品图片"></a></li>
+      <li><a href=""><img src="./image/5153dbcb33188_200x200_3.jpg" alt="商品图片"></a></li>
+      <li><a href=""><img src="./image/5153dbcb33188_200x200_3.jpg" alt="商品图片"></a></li>
+      <li><a href=""><img src="./image/5153dbcb33188_200x200_3.jpg" alt="商品图片"></a></li>
+      <li><a href=""><img src="./image/5153dbcb33188_200x200_3.jpg" alt="商品图片"></a></li>
+      <li><a href=""><img src="./image/5153dbcb33188_200x200_3.jpg" alt="商品图片"></a></li>
+    </ul>
+  </div>
+</body>
+
+</html>

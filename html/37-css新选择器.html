@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css新选择器</title>
+    <style media="screen">
+      li{
+        background-color: gold;
+        margin-bottom: 10px;
+      }
+      /* 第二行背景颜色变粉色
+      li:nth-child(2){
+        background-color: pink;
+      }*/
+      /* 1 3 5 7 单数变粉色
+      li:nth-child(2n+1){
+        background-color: pink;
+      }*/
+      li:nth-of-type(2n){
+        background-color: pink;
+      }
+      .box div{
+        background-color: gold;
+        margin-bottom: 10px;
+      }
+      /* 第三个子元素而且要是div才匹配,不然不匹配 */
+      .box div:nth-child(3){
+        background-color: pink;
+        font: 19px/20px '微软雅黑';
+        color: #fff;
+      }
+      /* 父级下面第三个div,跳过不同类型 */
+      .box div:nth-of-type(3){
+        background-color: green;
+      }
+      /* 设置倒数第二个背景颜色 */
+      li:nth-last-child(2){
+        background-color: #fff;
+      }
+      /* 匹配第一个li */
+      li:first-child{
+        background-color: green;
+      }
+      /* 匹配box里面唯一一个p标签, 如果有两个P标签就不匹配了 */
+      .box p:only-of-type{
+        background-color: #f0f0f0;
+      }
+      /* 匹配box里面唯一一个p标签, 如果有两个标签不管是不是p标签都匹配不上 */
+      .box p:only-child{
+        background-color: green;
+      }
+      /* checkbox后面紧接的label标签, 如果紧接的标签不是label就选择不上 */
+      input:checked + label{
+        color: red;
+      }
+      .box01{
+        display: none;
+      }
+      input:checked + div{
+        display: block;
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>ul容器</h3>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+    </ul>
+    <h3>div容器</h3>
+    <div class="box">
+      <div>1</div>
+      <div>2</div>
+      <p>p标签</p>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <input type="checkbox" name="" value="">
+    <div class="box01">这是一个div元素</div>
+    <label for="">选择状态</label>
+  </body>
+</html>
